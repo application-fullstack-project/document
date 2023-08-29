@@ -31,6 +31,8 @@ https://nodejs.org/ko
 
 ![Node.js 설치 확인](image/9.png)
 
+Mac에서는 nvm을 설치하고 node를 실행하지만, Windows에서는 바로 Node를 설치하는 것이 빠른 개발환경 구축에 도움이 되어서 이러한 방법으로 소개했습니다.
+
 2. vscode 설치하기
 
 vscode를 설치해 보겠습니다. 아래의 공식 홈페이지에서 자신의 컴퓨터에 맞는 설치파일(Windows)을 받아서 실행합니다.
@@ -47,7 +49,23 @@ vscode 또한 권장 사항에 맞게 설치하시면 됩니다.
 ![vscode 설치 화면](image/14.png)
 ![vscode 설치 화면](image/15.png)
 
-3. Git 설치하기
+3. NestJS 프로젝트 설치 및 생성하기
+
+원하는 폴더에 프로젝트를 생성합니다. 아무 폴더나 상관없지만 보통은 C:\Users\사용자이름 폴더에서 프로젝트를 생성합니다.
+
+ C:\Users\사용자이름 폴더에서 Shift + 마우스 오른쪽 버튼을 누르면 아래와 같은 메뉴가 나옵니다. 여기서 '여기에 Powershell 창 열기'를 클릭하면 powershell 창이 열립니다.
+![NestJS 프로젝트 생성](image/51.png)
+
+여기서 아래의 명령어를 순서대로 입력하면 nestjs 프로젝트가 생성됩니다.
+
+```powershell
+npm i -g @nestjs/cli
+nest new project-name
+```
+
+이제 vscode를 열고 위에서 만든 폴더를 open하면 개발환경이 완성됩니다.
+
+4. Git 설치하기
 
 공식 홈페이지에서 다운받은 후 설치하시면 됩니다. 본인의 컴퓨터에 맞는 Git을 설치하시면 됩니다. 대부분의 컴퓨는 64비트이므로 64비트-Setup을 받아서 설치하시면 되겠습니다.
 
@@ -71,7 +89,7 @@ Git 또한 권장사항으로 설치하면 되겠습니다.
 ![Git 설치 화면](image/29.png)
 ![Git 설치 화면](image/30.png)
 
-4. Postgres 설치하기
+5. Postgres 설치하기
 
 PC에 Database를 설치합니다. Windows 전용으로 Postgres를 제공하는 EDB를 설치하겠습니다. 아래의 홈페이지에서 14.9 버전을 설치하시면 됩니다. Windows x86-64 버전을 설치하시면 됩니다. 설치 마지막에 StackBuilder에서 확장 프로그램을 설치하라는 문구가 나오는데, 여기서는 설치하지 않겠습니다.
 
@@ -97,7 +115,7 @@ EDB는 일반적인 프로그램처럼 실행되지 않고 서비스로 실행�
 ![Postgres 실행 확인](image/42.png)
 ![Postgres 실행 확인](image/43.png)
 
-5. DB 클라이언트 설치
+6. DB 클라이언트 설치
 DB 프로그램을 설치했으니, DB의 내용을 확인할 클라이언트를 설치해야 합니다. 여기서는 DBeaver community를 설치할 것이며, 이것 또한 공식 홈페이지에서 다운받으시면 되겠습니다.
 
 https://dbeaver.io/download/
@@ -114,6 +132,6 @@ https://dbeaver.io/download/
 ![DBeaver 홈페이지](image/49.png)
 ![DBeaver 홈페이지](image/50.png)
 
-6. DBeaver 연결하기
+7. DBeaver 연결하기
 
 책에 나온대로 연결하시면 되겠습니다.
